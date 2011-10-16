@@ -10,7 +10,7 @@ import java.util.Random;
  *
  */
 public class WorkItemInitializer implements Callable<WorkItem> {
-	WorkItemInitializer() {
+	public WorkItemInitializer() {
 	}
 	
 	/**

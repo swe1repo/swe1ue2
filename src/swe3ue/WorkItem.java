@@ -12,35 +12,35 @@ public class WorkItem {
     private int vocals_;
     private int length_;
     
-    int getID() {
+    public int getID() {
     	return id_;
     }
     
-    String getWord() {
+    public String getWord() {
     	return word_;
     }
     
-    int getVocals() {
+    public int getVocals() {
     	return vocals_;
     }
     
-    int getLength() {
+    public int getLength() {
     	return length_;
     }
     
-    void setID(int id) {
+    public void setID(int id) {
     	id_ = id;
     }
     
-    void setWord(String word) {
+    public void setWord(String word) {
     	word_ = word;
     }
     
-    void setVocals(int vocals) {
+    public void setVocals(int vocals) {
     	vocals_ = vocals;
     }
     
-    void setLength(int length) {
+    public void setLength(int length) {
     	length_ = length;
     }
 }

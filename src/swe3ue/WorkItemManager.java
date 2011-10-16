@@ -139,6 +139,14 @@ public class WorkItemManager {
 		statProv_.endTimeForKey("Initializing");
 	}
 	
+	public List<Future<WorkItem>> getQueueRawItems() {
+		return queueRawItems_;
+	}
+	
+	public List<Future<WorkItem>> getQueueCalculatedItems() {
+		return queueCalculatedItems_;
+	}
+	
 	/**
 	 * Helper method to construct an array of WorkItemInitializers.
 	 * 
@@ -193,7 +201,7 @@ public class WorkItemManager {
 	 */
 	public static void main(String[] args) {
 		
-		WorkItemManager wim = new WorkItemManager(4, 300000);
+		WorkItemManager wim = new WorkItemManager(4, 100000);
 
 		wim.init();
 		wim.process();

@@ -16,7 +16,7 @@ public class WorkItemProcessor implements Callable<WorkItem> {
 	 * 
 	 * @param it The WorkItem to be processed.
 	 */
-	WorkItemProcessor(WorkItem it) {
+	public WorkItemProcessor(WorkItem it) {
 		it_ = it;
 	}
 	
